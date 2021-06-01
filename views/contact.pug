@@ -1,0 +1,21 @@
+extends basic.pug 
+
+block scripts
+    script(src="../templates/java.js")
+
+block styles
+     link(rel='stylesheet' href='../templates/style.css')
+
+block content 
+    //- | this is me
+    h1.heading11 contact us
+    form.fill(action='/contact' method='post')
+        input.faram(type='name' name='nam' placeholder='Enter your name here')
+        input.faram(type='age' name='age' placeholder='Enter your age here')
+        input.faram(type='gender' name='gender' placeholder='Enter your Gender here')
+        input.faram(type='number' name='phone' placeholder='Enter your  Phonenumber  here')
+        textarea.faram(name="more", cols="30", rows="10" placeholder="write something about you") </textarea>
+        button.btn Submit
+
+    block foot
+    footer.footerr nitintiwari &copy; origindanceacademy.com 

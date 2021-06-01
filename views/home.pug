@@ -1,0 +1,46 @@
+extends basic.pug 
+
+block scripts
+    script(src="../templates/java.js")
+
+block styles
+     link(rel='stylesheet' href='../templates/style.css')
+
+block content
+    section#home
+      h1.heading Origin Dance Academy
+      h2.heading2 Dance Repeat&amp;Repeat
+    // middle
+    section#center
+      h1.heading3 Our Services
+      #item
+        .box
+          h4.head Best Teachers
+          p.para
+            | we have best dance
+            br
+            |  masters in the world
+          img(src='../templates/a.gif')
+        .box
+          h4.head Dance Variation
+          p.para
+            | we have best types
+            br
+            | of dances in the world
+          img(src='../templates/b.png')
+        .box
+          h4.head Highest Dance Rankers
+          p.para
+            | Having best dance
+            br
+            |  rankers in the world
+          img(src='../templates/c.png')
+    // sponcer section
+    section#sponcer
+      h1.heading1 sponcer Academy
+      img(src='../templates/tweet.jpg')
+      img(src='../templates/skype.png')
+      img(src='../templates/apple.jpg')
+      img(src='../templates/amazon.png')
+    // footer
+    footer.footerr nitintiwari &copy; origindanceacademy.com
